@@ -95,12 +95,13 @@ int main() {
         info[i].state = TEST_RUN;
         info[i].time_limt = 2500.0;
         pthread_create(&info[i].tid, NULL, test_function, (void*)&info[i]);
+        pthread_join(info[i].tid, NULL);
         printf("%d : %ld\n", i, info[i].tid);
     }
     
-    for (int i = 0; i < JUDGE_TOT; ++i) {
-        pthread_join(info[i].tid, NULL);
-    }
+    // for (int i = 0; i < JUDGE_TOT; ++i) {
+    //     pthread_join(info[i].tid, NULL);
+    // }
 
     clock_gettime(CLOCK_MONOTONIC, &eed);
     printf(" ------------- \n");

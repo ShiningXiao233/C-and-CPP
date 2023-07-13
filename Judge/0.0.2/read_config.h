@@ -7,7 +7,7 @@
 
 #define ARGNAME(x) #x
 #define argnum 100
-#define PATH_LEN 200
+#define PATH_LEN 400
 #define CORE_CONFIG "./core.config"
 
 char arg[argnum];
@@ -16,12 +16,38 @@ char tmp_path[PATH_LEN];
 int JUDGE_TOT = 2;
 int time_limt = 1000;
 int data_num = 0;
+char exec[PATH_LEN];
+
+
+/**
+ * 拼接字符串。。。。
+*/
+
+void to_get_timeout() {
+    strcpy(exec, "timeout ");
+    char a[20] = {0}, op = 0;
+    int p = time_limt;
+    while (p > 0) {
+        a[++op] = p % 10 + '0';
+        if (op == 3) a[++op] = '.';
+        p /= 10;
+    }
+    while (op < 3) {
+        a[++op] = '0';
+        if (op == 3) a[++op] = '.';
+    }
+    if (op == 4) a[++op] = '0';
+    a[0] = 's';
+    int len = strlen(exec);
+    for (int i = op; i >= 0; --i) exec[len ++] = a[i];
+    strcat(exec, " ./a.out");
+}
+
 /**
  * 从配置文件中导入信息
  * JUDGE_TOT 判题核心数量
  * PROBLEM_PATH 数据基础路径
 */
-
 void init_config(char *problem_id) {
     printf("%s: \033[35m%s\033[0m\n", ARGNAME(problem_id), problem_id);
     FILE *fp = fopen(CORE_CONFIG, "r");
@@ -86,6 +112,9 @@ void init_config(char *problem_id) {
             // printf(" === %s\n ==== \n", arg);
         }
     }
+
+    to_get_timeout();
+    printf("%s\n", exec);
 }
 
 #endif
