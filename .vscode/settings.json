@@ -6,7 +6,8 @@
         "pthread.h": "c",
         "signal.h": "c",
         "sigaction.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "stat.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
