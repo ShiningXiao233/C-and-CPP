@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "stdio.h": "c",
+        "libc-header-start.h": "c",
+        "pthread.h": "c",
+        "signal.h": "c",
+        "sigaction.h": "c",
+        "time.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
