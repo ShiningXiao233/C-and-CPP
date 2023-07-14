@@ -4,7 +4,7 @@
 
 #### C程序库获取时间
 
-##### 系统时间 `int clock_gettime (clockid_t __clock_id, struct timespec *__tp)`
+##### 系统时间 `int clock_gettime (clockid_t __clock_id, struct timespec *__tp)` [线程安全]
 
 ```c
 
@@ -26,7 +26,7 @@ struct timespec {
 
 ```
 
-##### 进程时间 `clock_t clock(void);` 
+##### 进程时间 `clock_t clock(void);` [线程安全]
 ```c
 
 #include <time.h>
@@ -48,7 +48,7 @@ float t = 1.0 * (ed - st) / CLOCKS_PER_SEC; // 代码片段执行的CPU时间，
 
 #### C程序库休眠类
 
-##### 纳秒级 `int nanosleep(const struct timespec *req, struct timespec *rem);`
+##### 纳秒级 `int nanosleep(const struct timespec *req, struct timespec *rem);` [线程安全]
 
 ```c
 
@@ -62,7 +62,7 @@ rem： 若remain不为NULL，那么指针指向的缓冲区返回剩余的休眠
 
 ```
 
-##### 微秒级 `int usleep(useconds_t usec);`
+##### 微秒级 `int usleep(useconds_t usec);` [线程安全]
 
 ```c
 
@@ -93,7 +93,7 @@ usleep (useconds_t useconds)
 
 ```
 
-##### 秒级 `unsigned int sleep(unsigned int seconds);`
+##### 秒级 `unsigned int sleep(unsigned int seconds);` [线程安全]
 
 ```c
 
