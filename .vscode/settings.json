@@ -7,7 +7,8 @@
         "signal.h": "c",
         "sigaction.h": "c",
         "time.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "unistd.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
