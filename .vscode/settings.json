@@ -10,7 +10,8 @@
         "time.h": "c",
         "stat.h": "c",
         "unistd.h": "c",
-        "read_config.h": "c"
+        "read_config.h": "c",
+        "manage_cgroup.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [

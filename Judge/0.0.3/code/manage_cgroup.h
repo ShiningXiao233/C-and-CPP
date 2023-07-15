@@ -1,3 +1,17 @@
+/**
+ * cgroup管理器源码
+ * 
+ * 配置参数介绍：
+ * CGROUP_ROOT_PATH       cgroup的根节点路径
+ * JUDGE_NAME             Judge的cgroup的名字
+ * CGROUP_MEMORY_PEAK     [不需要配置]cgroup的内存查看池
+ * CGROUP_MEMORY_MAX      [不需要配置]cgroup的内存限制池
+ * JUDGE_PATH             [不需要配置]Judge的cgroup路径，会自动拼接
+ * CGROUP_SUB_CONTROLLER  [不需要配置]cgroup的控制器
+ * CGROUP_CONFIG_PATH     [不需要配置]当前程序的配置文件路径，一般用上级程序指定
+ * CONTROLLER_TYPE        [不需要配置]cgroup的控制器，当前只支持memory
+*/
+
 #ifndef __MANAGR_CGROUP__
 
 #define __MANAGR_CGROUP__ " manage_cgroup of OpenJudgeCore written by ZhilinXiao"
@@ -6,16 +20,28 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-const char* __manage_cgroup_agv__[] = {"CGROUP_ROOT_PATH", "JUDGE_NAME", "CGROUP_MEMORY_PEAK",
-                                     "CGROUP_MEMORY_MAX", "JUDGE_PATH", "CGROUP_SUB_CONTROLLER"};
-char __manage_cgroup_val__[6][ARGMAXLEN] = {
+#define CONST_ARG_NUM 8
+
+const char* __manage_cgroup_agv__[CONST_ARG_NUM] = {
+    "CGROUP_ROOT_PATH", 
+    "JUDGE_NAME", 
+    "CGROUP_MEMORY_PEAK",
+    "CGROUP_MEMORY_MAX", 
+    "JUDGE_PATH", 
+    "CGROUP_SUB_CONTROLLER",
+    "CGROUP_CONFIG_PATH",
+    "CONTROLLER_TYPE"
+    };
+char __manage_cgroup_val__[CONST_ARG_NUM][ARGMAXLEN] = {
     "/sys/fs/cgroup",
     "judge",
     "memory.peak",
     "memory.max",
-    "",
-    "cgroup.subtree_control"
-};
+    "/sys/fs/cgroup/judge",
+    "cgroup.subtree_control",
+    "./cgroup.config",
+    "+memory +io +cpu"
+    };
 
 #define CGROUP_ROOT_PATH __manage_cgroup_val__[0]
 #define JUDGE_NAME __manage_cgroup_val__[1]
@@ -23,7 +49,8 @@ char __manage_cgroup_val__[6][ARGMAXLEN] = {
 #define CGROUP_MEMORY_MAX __manage_cgroup_val__[3]
 #define JUDGE_PATH __manage_cgroup_val__[4]
 #define CGROUP_SUB_CONTROLLER __manage_cgroup_val__[5]
-
+#define CGROUP_CONFIG_PATH __manage_cgroup_val__[6]
+#define CONTROLLER_TYPE __manage_cgroup_val__[7]
 
 typedef unsigned long long ull;
 
@@ -63,7 +90,7 @@ int cgroup_clear() {
  * 返回0说明创建成功，返回-1说明失败
 */
 int cgroup_init() {
-    read_config_char("./cgroup.config", __manage_cgroup_agv__, __manage_cgroup_val__, 1);
+    read_config_char(CGROUP_CONFIG_PATH, __manage_cgroup_agv__, __manage_cgroup_val__, CONST_ARG_NUM);
     
     sprintf(__manage_cgroup_command, "%s/%s", CGROUP_ROOT_PATH, JUDGE_NAME);
     strcpy(JUDGE_PATH, __manage_cgroup_command);
@@ -87,7 +114,7 @@ int cgroup_init() {
         return -1;
     }
 
-    fprintf(fp, "+memory +cpu +io\n");
+    fprintf(fp, "%s", CONTROLLER_TYPE);
     fclose(fp);
 
     printf("\033[32m create success \033[0m: judge root cgroup create in %s\n", JUDGE_PATH);
@@ -122,7 +149,7 @@ int cgroup_del(const char* uuid) {
  * unit 指定内存单位，默认MB
  * 返回0成功，-1失败
 */
-int cgroup_create(const char* uuid, ull memory_limit, ull unit) {
+int cgroup_create(const char* uuid, ull memory_limit, ull unit) { 
 
     sprintf(__manage_cgroup_command, "mkdir %s/%s", JUDGE_PATH, uuid);
     int state = system(__manage_cgroup_command);
@@ -151,7 +178,7 @@ int cgroup_create(const char* uuid, ull memory_limit, ull unit) {
 
     fclose(fp);
 
-    printf("\033[32m create cgroup success\033[0m: %s\n", uuid);
+    printf("\033[32m create judge_root cgroup success\033[0m: %s\n", uuid);
 
     return 0;
 }
