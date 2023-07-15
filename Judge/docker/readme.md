@@ -1,9 +1,44 @@
 # docker 使用ubuntu技巧 默认[root]
 
 
-### 1
+
+
+
+### 1 安装
+
+安装docker
+
+```bash
+ # 官方的安装脚本
+ curl -fsSL https://test.docker.com -o test-docker.sh
+ sudo sh test-docker.sh
+```
 
 > `cat /etc/issue` 查看docker中ubuntu的版本号
+
+
+
+安装完docker后，一般会自动创建 `docker` 用户组，我们将当前用户加入 `docker ` 用户组，可以减少权限的限制，否则每次操作都要加`sudo`（非root用户）
+
+**使用 `gpasswd` 命令** （使用命令时对于非root用户需要root权限）
+
+```bash
+gpasswd [可选项] 组名
+# 例如
+gpasswd -a user_name group_name # 添加user_name用户到了group_name
+gpasswd -a ${USER} docker # 添加当前用户到docker组
+```
+
+**可选项参数**：
+
+- -a：添加用户到组；
+- -d：从组删除用户；
+- -A：指定管理员；
+- -M：指定组成员和-A的用途差不多；
+- -r：删除密码；
+- -R：限制用户登入组，只有组中的成员才可以用newgrp加入该组。
+
+
 
 
 
