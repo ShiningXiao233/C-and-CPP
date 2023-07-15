@@ -54,7 +54,7 @@ char __manage_cgroup_val__[CONST_ARG_NUM][ARGMAXLEN] = {
 
 typedef unsigned long long ull;
 
-char __manage_cgroup_command[ARGMAXLEN * 10];
+char __manage_cgroup_command[ARGMAXLEN * 10];  // 临时变量用来存储命令字符
 
 const ull MEMORY_KB = 1024ull;
 const ull MEMORY_MB = MEMORY_KB * 1024ull;
