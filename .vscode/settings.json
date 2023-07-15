@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.config": "shellscript",
         "string.h": "c",
         "stdio.h": "c",
         "libc-header-start.h": "c",
@@ -8,7 +9,8 @@
         "sigaction.h": "c",
         "time.h": "c",
         "stat.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "read_config.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
