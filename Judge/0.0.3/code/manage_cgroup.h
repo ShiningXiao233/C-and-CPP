@@ -14,7 +14,7 @@
 
 #ifndef __MANAGR_CGROUP__
 
-#define __MANAGR_CGROUP__ " manage_cgroup of OpenJudgeCore written by ZhilinXiao"
+#define __MANAGR_CGROUP__ "manage_cgroup of OpenJudgeCore written by ZhilinXiao"
 
 #include "read_config.h"
 #include <stdlib.h>
@@ -61,7 +61,7 @@ const ull MEMORY_MB = MEMORY_KB * 1024ull;
 const ull MEMORY_GB = MEMORY_MB * 1024ull;
 
 int cgroup_clear();
-int cgroup_init();
+int cgroup_init(const char* config_path);
 int cgroup_del(const char* uuid);
 ull cgroup_read_max_memory(const char* uuid, ull unit);
 int cgroup_create(const char* uuid, ull memory_limit, ull unit);
@@ -89,8 +89,11 @@ int cgroup_clear() {
  * 在cgroup根目录下建立一个唯一的judge的cgroup，用来限制资源
  * 返回0说明创建成功，返回-1说明失败
 */
-int cgroup_init() {
-    read_config_char(CGROUP_CONFIG_PATH, __manage_cgroup_agv__, __manage_cgroup_val__, CONST_ARG_NUM);
+int cgroup_init(const char* config_path) {
+    if (*config_path != 0) {
+        strcpy(CGROUP_CONFIG_PATH, config_path);
+        read_config_char(CGROUP_CONFIG_PATH, __manage_cgroup_agv__, __manage_cgroup_val__, CONST_ARG_NUM);
+    }
     
     sprintf(__manage_cgroup_command, "%s/%s", CGROUP_ROOT_PATH, JUDGE_NAME);
     strcpy(JUDGE_PATH, __manage_cgroup_command);
