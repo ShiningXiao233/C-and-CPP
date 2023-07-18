@@ -48,3 +48,84 @@
 完成了对配置文件读入的开发，是一个 `read_config` 的代码
 
 > 小发现，vscode可以自定义后缀的高亮显示，在设置-》编辑器里面修改就好了，或者在vscode右下角就可以设置渲染格式。
+
+
+## 2023/7/18 发现新的C系统函数(放弃system调用bash)
+
+
+
+这玩意比直接调用bash的效率高多了
+
+```bash
+EXEC(3) 
+
+NAME
+       execl, execlp, execle, execv, execvp, execvpe - execute a file
+
+SYNOPSIS
+       #include <unistd.h>
+
+       extern char **environ;
+
+       int execl(const char *pathname, const char *arg, ...
+                       /* (char  *) NULL */);
+       int execlp(const char *file, const char *arg, ...
+                       /* (char  *) NULL */);
+       int execle(const char *pathname, const char *arg, ...
+                       /*, (char *) NULL, char *const envp[] */);
+       int execv(const char *pathname, char *const argv[]);
+       int execvp(const char *file, char *const argv[]);
+       int execvpe(const char *file, char *const argv[],
+                       char *const envp[]);
+
+   Feature Test Macro Requirements for glibc (see feature_test_macros(7)):
+
+       execvpe(): _GNU_SOURCE
+
+DESCRIPTION
+# 大意就是，这些函数是系统级函数，可以调用程序并且加载到当前进程的空间，相当于就是在当前的进程空间下直接跳转到新程序下运行。
+       The  exec()  family  of  functions replaces the current process image with a new process image.  The functions described in this manual page are layered on top of execve(2).  (See the manual page for execve(2) for further  details  about  the  re‐placement of the current process image.)
+
+       The initial argument for these functions is the name of a file that is to be executed.
+
+       The functions can be grouped based on the letters following the "exec" prefix.
+
+```
+
+
+```bash
+System calls
+
+NAME
+       getrlimit, setrlimit, prlimit - get/set resource limits
+
+SYNOPSIS
+       #include <sys/time.h>
+       #include <sys/resource.h>
+
+       int getrlimit(int resource, struct rlimit *rlim);
+       int setrlimit(int resource, const struct rlimit *rlim);
+
+       int prlimit(pid_t pid, int resource, const struct rlimit *new_limit,
+                   struct rlimit *old_limit);
+
+   Feature Test Macro Requirements for glibc (see feature_test_macros(7)):
+
+       prlimit(): _GNU_SOURCE
+
+DESCRIPTION
+       The getrlimit() and setrlimit() system calls get and set resource limits.  Each resource has an associated soft and hard limit, as defined by the rlimit structure:
+
+           struct rlimit {
+               rlim_t rlim_cur;  /* Soft limit */
+               rlim_t rlim_max;  /* Hard limit (ceiling for rlim_cur) */
+           };
+
+       The soft limit is the value that the kernel enforces for the corresponding resource.  The hard limit acts as a ceiling for the soft limit: an unprivileged process may set only its soft limit to a value in the range from 0 up to the hard limit, and (irreversibly) lower its hard limit.  A privileged process (under Linux: one  with  the
+       
+       CAP_SYS_RESOURCE capability in the initial user namespace) may make arbitrary changes to either limit value.
+
+       The value RLIM_INFINITY denotes no limit on a resource (both in the structure returned by getrlimit() and in the structure passed to setrlimit()).
+
+
+```
