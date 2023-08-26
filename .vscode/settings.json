@@ -3,6 +3,7 @@
         "*.config": "shellscript",
         "iostream": "cpp",
         "fstream": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "typeinfo": "cpp"
     }
 }
