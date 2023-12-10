@@ -92,6 +92,7 @@ dome_EXTERNAL_OBJECTS =
 
 dome: CMakeFiles/dome.dir/dome.cpp.o
 dome: CMakeFiles/dome.dir/build.make
+dome: myfunc/libmyfunc.a
 dome: CMakeFiles/dome.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable dome"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dome.dir/link.txt --verbose=$(VERBOSE)

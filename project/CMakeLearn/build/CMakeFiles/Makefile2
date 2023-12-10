@@ -64,21 +64,38 @@ CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
 
 # The main recursive "all" target.
 all: CMakeFiles/dome.dir/all
+all: myfunc/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: myfunc/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/dome.dir/clean
+clean: myfunc/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory myfunc
+
+# Recursive "all" directory target.
+myfunc/all: myfunc/CMakeFiles/myfunc.dir/all
+.PHONY : myfunc/all
+
+# Recursive "preinstall" directory target.
+myfunc/preinstall:
+.PHONY : myfunc/preinstall
+
+# Recursive "clean" directory target.
+myfunc/clean: myfunc/CMakeFiles/myfunc.dir/clean
+.PHONY : myfunc/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/dome.dir
 
 # All Build rule for target.
-CMakeFiles/dome.dir/all:
+CMakeFiles/dome.dir/all: myfunc/CMakeFiles/myfunc.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=1,2 "Built target dome"
@@ -86,7 +103,7 @@ CMakeFiles/dome.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dome.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dome.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : CMakeFiles/dome.dir/rule
@@ -99,6 +116,32 @@ dome: CMakeFiles/dome.dir/rule
 CMakeFiles/dome.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/clean
 .PHONY : CMakeFiles/dome.dir/clean
+
+#=============================================================================
+# Target rules for target myfunc/CMakeFiles/myfunc.dir
+
+# All Build rule for target.
+myfunc/CMakeFiles/myfunc.dir/all:
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/depend
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=3,4,5 "Built target myfunc"
+.PHONY : myfunc/CMakeFiles/myfunc.dir/all
+
+# Build rule for subdir invocation for target.
+myfunc/CMakeFiles/myfunc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/myfunc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
+.PHONY : myfunc/CMakeFiles/myfunc.dir/rule
+
+# Convenience name for target.
+myfunc: myfunc/CMakeFiles/myfunc.dir/rule
+.PHONY : myfunc
+
+# clean rule for target.
+myfunc/CMakeFiles/myfunc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/clean
+.PHONY : myfunc/CMakeFiles/myfunc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

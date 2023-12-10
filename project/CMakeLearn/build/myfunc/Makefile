@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc//CMakeFiles/progress.marks
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named dome
+# Convenience name for target.
+myfunc/CMakeFiles/myfunc.dir/rule:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/myfunc.dir/rule
+.PHONY : myfunc/CMakeFiles/myfunc.dir/rule
 
-# Build rule for target.
-dome: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dome
-.PHONY : dome
-
-# fast build rule for target.
-dome/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/build
-.PHONY : dome/fast
-
-#=============================================================================
-# Target rules for targets named myfunc
-
-# Build rule for target.
-myfunc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc
+# Convenience name for target.
+myfunc: myfunc/CMakeFiles/myfunc.dir/rule
 .PHONY : myfunc
 
 # fast build rule for target.
 myfunc/fast:
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
 .PHONY : myfunc/fast
 
-dome.o: dome.cpp.o
-.PHONY : dome.o
+myfunc.o: myfunc.cpp.o
+.PHONY : myfunc.o
 
 # target to build an object file
-dome.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/dome.cpp.o
-.PHONY : dome.cpp.o
+myfunc.cpp.o:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.o
+.PHONY : myfunc.cpp.o
 
-dome.i: dome.cpp.i
-.PHONY : dome.i
+myfunc.i: myfunc.cpp.i
+.PHONY : myfunc.i
 
 # target to preprocess a source file
-dome.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/dome.cpp.i
-.PHONY : dome.cpp.i
+myfunc.cpp.i:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.i
+.PHONY : myfunc.cpp.i
 
-dome.s: dome.cpp.s
-.PHONY : dome.s
+myfunc.s: myfunc.cpp.s
+.PHONY : myfunc.s
 
 # target to generate assembly for a file
-dome.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/dome.cpp.s
-.PHONY : dome.cpp.s
+myfunc.cpp.s:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.s
+.PHONY : myfunc.cpp.s
+
+pow.o: pow.cpp.o
+.PHONY : pow.o
+
+# target to build an object file
+pow.cpp.o:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.o
+.PHONY : pow.cpp.o
+
+pow.i: pow.cpp.i
+.PHONY : pow.i
+
+# target to preprocess a source file
+pow.cpp.i:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.i
+.PHONY : pow.cpp.i
+
+pow.s: pow.cpp.s
+.PHONY : pow.s
+
+# target to generate assembly for a file
+pow.cpp.s:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.s
+.PHONY : pow.cpp.s
 
 # Help Target
 help:
@@ -174,11 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dome"
 	@echo "... myfunc"
-	@echo "... dome.o"
-	@echo "... dome.i"
-	@echo "... dome.s"
+	@echo "... myfunc.o"
+	@echo "... myfunc.i"
+	@echo "... myfunc.s"
+	@echo "... pow.o"
+	@echo "... pow.i"
+	@echo "... pow.s"
 .PHONY : help
 
 
@@ -190,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
