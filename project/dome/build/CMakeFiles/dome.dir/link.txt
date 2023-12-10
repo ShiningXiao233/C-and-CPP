@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/dome.dir/dome.cpp.o -o dome 
