@@ -1,0 +1,3 @@
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/dome.dir
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/edit_cache.dir
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/rebuild_cache.dir

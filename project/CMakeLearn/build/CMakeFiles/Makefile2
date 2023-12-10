@@ -54,10 +54,10 @@ RM = /home/aurora/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/dome
+CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/dome/build
+CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/dome.dir/clean
 CMakeFiles/dome.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles --progress-num=1,2 "Built target dome"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=1,2 "Built target dome"
 .PHONY : CMakeFiles/dome.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dome.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dome.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : CMakeFiles/dome.dir/rule
 
 # Convenience name for target.

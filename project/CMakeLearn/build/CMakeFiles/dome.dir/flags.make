@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aurora/ganhuo/C-and-CPP/project/dome/build
+CXX_INCLUDES = -I/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
 
 CXX_FLAGS = -std=gnu++11
 

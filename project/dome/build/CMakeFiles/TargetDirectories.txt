@@ -1,3 +1,0 @@
-/home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles/dome.dir
-/home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles/edit_cache.dir
-/home/aurora/ganhuo/C-and-CPP/project/dome/build/CMakeFiles/rebuild_cache.dir
