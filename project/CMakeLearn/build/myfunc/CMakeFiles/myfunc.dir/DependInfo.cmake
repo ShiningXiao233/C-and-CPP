@@ -9,11 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/myfunc.cpp" "myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.o" "gcc" "myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.o.d"
-  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp" "myfunc/CMakeFiles/myfunc.dir/pow.cpp.o" "gcc" "myfunc/CMakeFiles/myfunc.dir/pow.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/powLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

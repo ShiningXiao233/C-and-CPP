@@ -81,6 +81,7 @@ clean: myfunc/clean
 
 # Recursive "all" directory target.
 myfunc/all: myfunc/CMakeFiles/myfunc.dir/all
+myfunc/all: myfunc/CMakeFiles/powLib.dir/all
 .PHONY : myfunc/all
 
 # Recursive "preinstall" directory target.
@@ -89,6 +90,7 @@ myfunc/preinstall:
 
 # Recursive "clean" directory target.
 myfunc/clean: myfunc/CMakeFiles/myfunc.dir/clean
+myfunc/clean: myfunc/CMakeFiles/powLib.dir/clean
 .PHONY : myfunc/clean
 
 #=============================================================================
@@ -96,6 +98,7 @@ myfunc/clean: myfunc/CMakeFiles/myfunc.dir/clean
 
 # All Build rule for target.
 CMakeFiles/dome.dir/all: myfunc/CMakeFiles/myfunc.dir/all
+CMakeFiles/dome.dir/all: myfunc/CMakeFiles/powLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=1,2 "Built target dome"
@@ -103,7 +106,7 @@ CMakeFiles/dome.dir/all: myfunc/CMakeFiles/myfunc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dome.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dome.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : CMakeFiles/dome.dir/rule
@@ -121,15 +124,15 @@ CMakeFiles/dome.dir/clean:
 # Target rules for target myfunc/CMakeFiles/myfunc.dir
 
 # All Build rule for target.
-myfunc/CMakeFiles/myfunc.dir/all:
+myfunc/CMakeFiles/myfunc.dir/all: myfunc/CMakeFiles/powLib.dir/all
 	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/depend
 	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=3,4,5 "Built target myfunc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=3,4 "Built target myfunc"
 .PHONY : myfunc/CMakeFiles/myfunc.dir/all
 
 # Build rule for subdir invocation for target.
 myfunc/CMakeFiles/myfunc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/myfunc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : myfunc/CMakeFiles/myfunc.dir/rule
@@ -142,6 +145,32 @@ myfunc: myfunc/CMakeFiles/myfunc.dir/rule
 myfunc/CMakeFiles/myfunc.dir/clean:
 	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/clean
 .PHONY : myfunc/CMakeFiles/myfunc.dir/clean
+
+#=============================================================================
+# Target rules for target myfunc/CMakeFiles/powLib.dir
+
+# All Build rule for target.
+myfunc/CMakeFiles/powLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=5,6 "Built target powLib"
+.PHONY : myfunc/CMakeFiles/powLib.dir/all
+
+# Build rule for subdir invocation for target.
+myfunc/CMakeFiles/powLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/powLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
+.PHONY : myfunc/CMakeFiles/powLib.dir/rule
+
+# Convenience name for target.
+powLib: myfunc/CMakeFiles/powLib.dir/rule
+.PHONY : powLib
+
+# clean rule for target.
+myfunc/CMakeFiles/powLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/clean
+.PHONY : myfunc/CMakeFiles/powLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -130,6 +130,20 @@ myfunc/fast:
 	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
 .PHONY : myfunc/fast
 
+# Convenience name for target.
+myfunc/CMakeFiles/powLib.dir/rule:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/powLib.dir/rule
+.PHONY : myfunc/CMakeFiles/powLib.dir/rule
+
+# Convenience name for target.
+powLib: myfunc/CMakeFiles/powLib.dir/rule
+.PHONY : powLib
+
+# fast build rule for target.
+powLib/fast:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/build
+.PHONY : powLib/fast
+
 myfunc.o: myfunc.cpp.o
 .PHONY : myfunc.o
 
@@ -159,7 +173,7 @@ pow.o: pow.cpp.o
 
 # target to build an object file
 pow.cpp.o:
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.o
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/pow.cpp.o
 .PHONY : pow.cpp.o
 
 pow.i: pow.cpp.i
@@ -167,7 +181,7 @@ pow.i: pow.cpp.i
 
 # target to preprocess a source file
 pow.cpp.i:
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.i
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/pow.cpp.i
 .PHONY : pow.cpp.i
 
 pow.s: pow.cpp.s
@@ -175,7 +189,7 @@ pow.s: pow.cpp.s
 
 # target to generate assembly for a file
 pow.cpp.s:
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/pow.cpp.s
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/pow.cpp.s
 .PHONY : pow.cpp.s
 
 # Help Target
@@ -187,6 +201,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myfunc"
+	@echo "... powLib"
 	@echo "... myfunc.o"
 	@echo "... myfunc.i"
 	@echo "... myfunc.s"

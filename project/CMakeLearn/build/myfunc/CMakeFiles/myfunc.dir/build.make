@@ -83,33 +83,17 @@ myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myfunc.dir/myfunc.cpp.s"
 	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/myfunc.cpp -o CMakeFiles/myfunc.dir/myfunc.cpp.s
 
-myfunc/CMakeFiles/myfunc.dir/pow.cpp.o: myfunc/CMakeFiles/myfunc.dir/flags.make
-myfunc/CMakeFiles/myfunc.dir/pow.cpp.o: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp
-myfunc/CMakeFiles/myfunc.dir/pow.cpp.o: myfunc/CMakeFiles/myfunc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object myfunc/CMakeFiles/myfunc.dir/pow.cpp.o"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT myfunc/CMakeFiles/myfunc.dir/pow.cpp.o -MF CMakeFiles/myfunc.dir/pow.cpp.o.d -o CMakeFiles/myfunc.dir/pow.cpp.o -c /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp
-
-myfunc/CMakeFiles/myfunc.dir/pow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myfunc.dir/pow.cpp.i"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp > CMakeFiles/myfunc.dir/pow.cpp.i
-
-myfunc/CMakeFiles/myfunc.dir/pow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myfunc.dir/pow.cpp.s"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp -o CMakeFiles/myfunc.dir/pow.cpp.s
-
 # Object files for target myfunc
 myfunc_OBJECTS = \
-"CMakeFiles/myfunc.dir/myfunc.cpp.o" \
-"CMakeFiles/myfunc.dir/pow.cpp.o"
+"CMakeFiles/myfunc.dir/myfunc.cpp.o"
 
 # External object files for target myfunc
 myfunc_EXTERNAL_OBJECTS =
 
 myfunc/libmyfunc.a: myfunc/CMakeFiles/myfunc.dir/myfunc.cpp.o
-myfunc/libmyfunc.a: myfunc/CMakeFiles/myfunc.dir/pow.cpp.o
 myfunc/libmyfunc.a: myfunc/CMakeFiles/myfunc.dir/build.make
 myfunc/libmyfunc.a: myfunc/CMakeFiles/myfunc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmyfunc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmyfunc.a"
 	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && $(CMAKE_COMMAND) -P CMakeFiles/myfunc.dir/cmake_clean_target.cmake
 	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myfunc.dir/link.txt --verbose=$(VERBOSE)
 

@@ -142,6 +142,19 @@ myfunc/fast:
 	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
 .PHONY : myfunc/fast
 
+#=============================================================================
+# Target rules for targets named powLib
+
+# Build rule for target.
+powLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 powLib
+.PHONY : powLib
+
+# fast build rule for target.
+powLib/fast:
+	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/build
+.PHONY : powLib/fast
+
 dome.o: dome.cpp.o
 .PHONY : dome.o
 
@@ -176,6 +189,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dome"
 	@echo "... myfunc"
+	@echo "... powLib"
 	@echo "... dome.o"
 	@echo "... dome.i"
 	@echo "... dome.s"

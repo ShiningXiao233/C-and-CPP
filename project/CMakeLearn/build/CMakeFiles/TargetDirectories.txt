@@ -2,5 +2,6 @@
 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/edit_cache.dir
 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/rebuild_cache.dir
 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/myfunc.dir
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/powLib.dir
 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/edit_cache.dir
 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/rebuild_cache.dir

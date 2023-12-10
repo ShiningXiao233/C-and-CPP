@@ -43,4 +43,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/dome.dir/DependInfo.cmake"
   "myfunc/CMakeFiles/myfunc.dir/DependInfo.cmake"
+  "myfunc/CMakeFiles/powLib.dir/DependInfo.cmake"
   )

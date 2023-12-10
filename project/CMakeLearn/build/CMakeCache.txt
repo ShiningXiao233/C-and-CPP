@@ -201,6 +201,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//use my func
+USE_MYFUNC:BOOL=on
+
 //Value Computed by CMake
 dome_BINARY_DIR:STATIC=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
 
@@ -209,6 +212,9 @@ dome_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 dome_SOURCE_DIR:STATIC=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2
+
+//Dependencies for the target
+myfunc_LIB_DEPENDS:STATIC=general;powLib;
 
 
 ########################
