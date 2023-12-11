@@ -1,2 +1,0 @@
-#define DOME_VERSION_MAJOR 0
-#define DOME_VERSION_MINOR 3

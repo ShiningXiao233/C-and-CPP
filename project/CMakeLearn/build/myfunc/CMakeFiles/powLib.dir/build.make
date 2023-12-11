@@ -53,7 +53,7 @@ RM = /home/aurora/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2
+CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
@@ -70,18 +70,18 @@ include myfunc/CMakeFiles/powLib.dir/progress.make
 include myfunc/CMakeFiles/powLib.dir/flags.make
 
 myfunc/CMakeFiles/powLib.dir/pow.cpp.o: myfunc/CMakeFiles/powLib.dir/flags.make
-myfunc/CMakeFiles/powLib.dir/pow.cpp.o: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp
+myfunc/CMakeFiles/powLib.dir/pow.cpp.o: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc/pow.cpp
 myfunc/CMakeFiles/powLib.dir/pow.cpp.o: myfunc/CMakeFiles/powLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object myfunc/CMakeFiles/powLib.dir/pow.cpp.o"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT myfunc/CMakeFiles/powLib.dir/pow.cpp.o -MF CMakeFiles/powLib.dir/pow.cpp.o.d -o CMakeFiles/powLib.dir/pow.cpp.o -c /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT myfunc/CMakeFiles/powLib.dir/pow.cpp.o -MF CMakeFiles/powLib.dir/pow.cpp.o.d -o CMakeFiles/powLib.dir/pow.cpp.o -c /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc/pow.cpp
 
 myfunc/CMakeFiles/powLib.dir/pow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/powLib.dir/pow.cpp.i"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp > CMakeFiles/powLib.dir/pow.cpp.i
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc/pow.cpp > CMakeFiles/powLib.dir/pow.cpp.i
 
 myfunc/CMakeFiles/powLib.dir/pow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/powLib.dir/pow.cpp.s"
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc/pow.cpp -o CMakeFiles/powLib.dir/pow.cpp.s
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc/pow.cpp -o CMakeFiles/powLib.dir/pow.cpp.s
 
 # Object files for target powLib
 powLib_OBJECTS = \
@@ -106,6 +106,6 @@ myfunc/CMakeFiles/powLib.dir/clean:
 .PHONY : myfunc/CMakeFiles/powLib.dir/clean
 
 myfunc/CMakeFiles/powLib.dir/depend:
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_2/myfunc /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/powLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/CMakeFiles/powLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : myfunc/CMakeFiles/powLib.dir/depend
 

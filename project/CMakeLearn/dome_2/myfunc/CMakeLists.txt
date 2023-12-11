@@ -1,7 +1,5 @@
 option(USE_MYFUNC "use my func" ON)
 
-# add_library("myfunc" "myfunc.cpp" "pow.cpp")
-
 add_library("myfunc" "./myfunc.cpp")
 
 if(USE_MYFUNC)
