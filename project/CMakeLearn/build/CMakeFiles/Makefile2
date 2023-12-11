@@ -54,7 +54,7 @@ RM = /home/aurora/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3
+CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build

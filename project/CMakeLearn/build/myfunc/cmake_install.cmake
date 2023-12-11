@@ -1,4 +1,4 @@
-# Install script for directory: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc
+# Install script for directory: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/myfunc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

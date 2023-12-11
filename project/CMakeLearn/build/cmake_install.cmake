@@ -1,4 +1,4 @@
-# Install script for directory: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3
+# Install script for directory: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,9 +43,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
+  # Include the install script for the subdirectory.
   include("/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/myfunc/cmake_install.cmake")
-
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

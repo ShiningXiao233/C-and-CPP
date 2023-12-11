@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc
+CXX_INCLUDES = -I/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/myfunc
 
-CXX_FLAGS = 
+CXX_FLAGS = -Wall -Wextra -Wshadow -Wformat=2 -Wunused -std=c++11
 

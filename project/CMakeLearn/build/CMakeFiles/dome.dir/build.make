@@ -53,7 +53,7 @@ RM = /home/aurora/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3
+CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
@@ -70,18 +70,18 @@ include CMakeFiles/dome.dir/progress.make
 include CMakeFiles/dome.dir/flags.make
 
 CMakeFiles/dome.dir/dome.cpp.o: CMakeFiles/dome.dir/flags.make
-CMakeFiles/dome.dir/dome.cpp.o: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/dome.cpp
+CMakeFiles/dome.dir/dome.cpp.o: /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/dome.cpp
 CMakeFiles/dome.dir/dome.cpp.o: CMakeFiles/dome.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dome.dir/dome.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dome.dir/dome.cpp.o -MF CMakeFiles/dome.dir/dome.cpp.o.d -o CMakeFiles/dome.dir/dome.cpp.o -c /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/dome.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dome.dir/dome.cpp.o -MF CMakeFiles/dome.dir/dome.cpp.o.d -o CMakeFiles/dome.dir/dome.cpp.o -c /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/dome.cpp
 
 CMakeFiles/dome.dir/dome.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dome.dir/dome.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/dome.cpp > CMakeFiles/dome.dir/dome.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/dome.cpp > CMakeFiles/dome.dir/dome.cpp.i
 
 CMakeFiles/dome.dir/dome.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dome.dir/dome.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/dome.cpp -o CMakeFiles/dome.dir/dome.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/dome.cpp -o CMakeFiles/dome.dir/dome.cpp.s
 
 # Object files for target dome
 dome_OBJECTS = \
@@ -107,6 +107,6 @@ CMakeFiles/dome.dir/clean:
 .PHONY : CMakeFiles/dome.dir/clean
 
 CMakeFiles/dome.dir/depend:
-	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/dome.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4 /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles/dome.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dome.dir/depend
 

@@ -23,8 +23,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/aurora/.local/lib/python3.10/site-packages/cmake/data/share/cmake-3.25/Modules/Platform/UnixPaths.cmake"
   "CMakeFiles/3.25.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.0/CMakeSystem.cmake"
-  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/CMakeLists.txt"
-  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/myfunc/CMakeLists.txt"
+  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/CMakeLists.txt"
+  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/myfunc/CMakeLists.txt"
   )
 
 # The corresponding makefile is:

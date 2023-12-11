@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = 
+CXX_FLAGS = -Wall -Wextra -Wshadow -Wformat=2 -Wunused -std=c++11
 

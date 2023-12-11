@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_3/dome.cpp" "CMakeFiles/dome.dir/dome.cpp.o" "gcc" "CMakeFiles/dome.dir/dome.cpp.o.d"
+  "/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4/dome.cpp" "CMakeFiles/dome.dir/dome.cpp.o" "gcc" "CMakeFiles/dome.dir/dome.cpp.o.d"
   )
 
 # Targets to which this target links.
