@@ -54,7 +54,7 @@ RM = /home/aurora/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/dome_4
+CMAKE_SOURCE_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/Step5
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
@@ -63,114 +63,114 @@ CMAKE_BINARY_DIR = /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/dome.dir/all
-all: myfunc/all
+all: CMakeFiles/Tutorial.dir/all
+all: MathFunctions/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: myfunc/preinstall
+preinstall: MathFunctions/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/dome.dir/clean
-clean: myfunc/clean
+clean: CMakeFiles/Tutorial.dir/clean
+clean: MathFunctions/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory myfunc
+# Directory level rules for directory MathFunctions
 
 # Recursive "all" directory target.
-myfunc/all: myfunc/CMakeFiles/myfunc.dir/all
-myfunc/all: myfunc/CMakeFiles/powLib.dir/all
-.PHONY : myfunc/all
+MathFunctions/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+MathFunctions/all: MathFunctions/CMakeFiles/SqrtLibrary.dir/all
+.PHONY : MathFunctions/all
 
 # Recursive "preinstall" directory target.
-myfunc/preinstall:
-.PHONY : myfunc/preinstall
+MathFunctions/preinstall:
+.PHONY : MathFunctions/preinstall
 
 # Recursive "clean" directory target.
-myfunc/clean: myfunc/CMakeFiles/myfunc.dir/clean
-myfunc/clean: myfunc/CMakeFiles/powLib.dir/clean
-.PHONY : myfunc/clean
+MathFunctions/clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
+MathFunctions/clean: MathFunctions/CMakeFiles/SqrtLibrary.dir/clean
+.PHONY : MathFunctions/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/dome.dir
+# Target rules for target CMakeFiles/Tutorial.dir
 
 # All Build rule for target.
-CMakeFiles/dome.dir/all: myfunc/CMakeFiles/myfunc.dir/all
-CMakeFiles/dome.dir/all: myfunc/CMakeFiles/powLib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=1,2 "Built target dome"
-.PHONY : CMakeFiles/dome.dir/all
+CMakeFiles/Tutorial.dir/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+CMakeFiles/Tutorial.dir/all: MathFunctions/CMakeFiles/SqrtLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=5,6 "Built target Tutorial"
+.PHONY : CMakeFiles/Tutorial.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/dome.dir/rule: cmake_check_build_system
+CMakeFiles/Tutorial.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dome.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Tutorial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
-.PHONY : CMakeFiles/dome.dir/rule
+.PHONY : CMakeFiles/Tutorial.dir/rule
 
 # Convenience name for target.
-dome: CMakeFiles/dome.dir/rule
-.PHONY : dome
+Tutorial: CMakeFiles/Tutorial.dir/rule
+.PHONY : Tutorial
 
 # clean rule for target.
-CMakeFiles/dome.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dome.dir/build.make CMakeFiles/dome.dir/clean
-.PHONY : CMakeFiles/dome.dir/clean
+CMakeFiles/Tutorial.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/clean
+.PHONY : CMakeFiles/Tutorial.dir/clean
 
 #=============================================================================
-# Target rules for target myfunc/CMakeFiles/myfunc.dir
+# Target rules for target MathFunctions/CMakeFiles/MathFunctions.dir
 
 # All Build rule for target.
-myfunc/CMakeFiles/myfunc.dir/all: myfunc/CMakeFiles/powLib.dir/all
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/depend
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=3,4 "Built target myfunc"
-.PHONY : myfunc/CMakeFiles/myfunc.dir/all
+MathFunctions/CMakeFiles/MathFunctions.dir/all: MathFunctions/CMakeFiles/SqrtLibrary.dir/all
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/depend
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=1,2 "Built target MathFunctions"
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/all
 
 # Build rule for subdir invocation for target.
-myfunc/CMakeFiles/myfunc.dir/rule: cmake_check_build_system
+MathFunctions/CMakeFiles/MathFunctions.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/myfunc.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
-.PHONY : myfunc/CMakeFiles/myfunc.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
 # Convenience name for target.
-myfunc: myfunc/CMakeFiles/myfunc.dir/rule
-.PHONY : myfunc
+MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
+.PHONY : MathFunctions
 
 # clean rule for target.
-myfunc/CMakeFiles/myfunc.dir/clean:
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/myfunc.dir/build.make myfunc/CMakeFiles/myfunc.dir/clean
-.PHONY : myfunc/CMakeFiles/myfunc.dir/clean
+MathFunctions/CMakeFiles/MathFunctions.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/clean
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/clean
 
 #=============================================================================
-# Target rules for target myfunc/CMakeFiles/powLib.dir
+# Target rules for target MathFunctions/CMakeFiles/SqrtLibrary.dir
 
 # All Build rule for target.
-myfunc/CMakeFiles/powLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=5,6 "Built target powLib"
-.PHONY : myfunc/CMakeFiles/powLib.dir/all
+MathFunctions/CMakeFiles/SqrtLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles --progress-num=3,4 "Built target SqrtLibrary"
+.PHONY : MathFunctions/CMakeFiles/SqrtLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-myfunc/CMakeFiles/powLib.dir/rule: cmake_check_build_system
+MathFunctions/CMakeFiles/SqrtLibrary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myfunc/CMakeFiles/powLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/SqrtLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
-.PHONY : myfunc/CMakeFiles/powLib.dir/rule
+.PHONY : MathFunctions/CMakeFiles/SqrtLibrary.dir/rule
 
 # Convenience name for target.
-powLib: myfunc/CMakeFiles/powLib.dir/rule
-.PHONY : powLib
+SqrtLibrary: MathFunctions/CMakeFiles/SqrtLibrary.dir/rule
+.PHONY : SqrtLibrary
 
 # clean rule for target.
-myfunc/CMakeFiles/powLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f myfunc/CMakeFiles/powLib.dir/build.make myfunc/CMakeFiles/powLib.dir/clean
-.PHONY : myfunc/CMakeFiles/powLib.dir/clean
+MathFunctions/CMakeFiles/SqrtLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/clean
+.PHONY : MathFunctions/CMakeFiles/SqrtLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

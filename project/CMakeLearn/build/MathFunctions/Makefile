@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/MathFunctions//CMakeFiles/progress.marks
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,81 +148,94 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Tutorial
+# Convenience name for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/rule:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
-# Build rule for target.
-Tutorial: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tutorial
-.PHONY : Tutorial
-
-# fast build rule for target.
-Tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
-.PHONY : Tutorial/fast
-
-#=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions
+# Convenience name for target.
+MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 .PHONY : MathFunctions
 
 # fast build rule for target.
 MathFunctions/fast:
-	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
 
-#=============================================================================
-# Target rules for targets named SqrtLibrary
+# Convenience name for target.
+MathFunctions/CMakeFiles/SqrtLibrary.dir/rule:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/SqrtLibrary.dir/rule
+.PHONY : MathFunctions/CMakeFiles/SqrtLibrary.dir/rule
 
-# Build rule for target.
-SqrtLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SqrtLibrary
+# Convenience name for target.
+SqrtLibrary: MathFunctions/CMakeFiles/SqrtLibrary.dir/rule
 .PHONY : SqrtLibrary
 
 # fast build rule for target.
 SqrtLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/build
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/build
 .PHONY : SqrtLibrary/fast
 
-tutorial.o: tutorial.cxx.o
-.PHONY : tutorial.o
+MathFunctions.o: MathFunctions.cxx.o
+.PHONY : MathFunctions.o
 
 # target to build an object file
-tutorial.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.o
-.PHONY : tutorial.cxx.o
+MathFunctions.cxx.o:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.o
+.PHONY : MathFunctions.cxx.o
 
-tutorial.i: tutorial.cxx.i
-.PHONY : tutorial.i
+MathFunctions.i: MathFunctions.cxx.i
+.PHONY : MathFunctions.i
 
 # target to preprocess a source file
-tutorial.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.i
-.PHONY : tutorial.cxx.i
+MathFunctions.cxx.i:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.i
+.PHONY : MathFunctions.cxx.i
 
-tutorial.s: tutorial.cxx.s
-.PHONY : tutorial.s
+MathFunctions.s: MathFunctions.cxx.s
+.PHONY : MathFunctions.s
 
 # target to generate assembly for a file
-tutorial.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/tutorial.cxx.s
-.PHONY : tutorial.cxx.s
+MathFunctions.cxx.s:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.s
+.PHONY : MathFunctions.cxx.s
+
+mysqrt.o: mysqrt.cxx.o
+.PHONY : mysqrt.o
+
+# target to build an object file
+mysqrt.cxx.o:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/mysqrt.cxx.o
+.PHONY : mysqrt.cxx.o
+
+mysqrt.i: mysqrt.cxx.i
+.PHONY : mysqrt.i
+
+# target to preprocess a source file
+mysqrt.cxx.i:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/mysqrt.cxx.i
+.PHONY : mysqrt.cxx.i
+
+mysqrt.s: mysqrt.cxx.s
+.PHONY : mysqrt.s
+
+# target to generate assembly for a file
+mysqrt.cxx.s:
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/SqrtLibrary.dir/build.make MathFunctions/CMakeFiles/SqrtLibrary.dir/mysqrt.cxx.s
+.PHONY : mysqrt.cxx.s
 
 # Help Target
 help:
@@ -238,10 +251,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MathFunctions"
 	@echo "... SqrtLibrary"
-	@echo "... Tutorial"
-	@echo "... tutorial.o"
-	@echo "... tutorial.i"
-	@echo "... tutorial.s"
+	@echo "... MathFunctions.o"
+	@echo "... MathFunctions.i"
+	@echo "... MathFunctions.s"
+	@echo "... mysqrt.o"
+	@echo "... mysqrt.i"
+	@echo "... mysqrt.s"
 .PHONY : help
 
 
@@ -253,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

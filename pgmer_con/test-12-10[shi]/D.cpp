@@ -2,18 +2,23 @@
 
 using namespace std;
 int n, m;
-const int N = static_cast<int>(1e5+10);
+const int N = static_cast<int>(1e6+10);
 int num[N];
 #include <cstring>
 
 void sol() {
     cin >> n >> m;
-    memset(num, 0, sizeof(int) * n);
+    if (n >= 10000000) {
+        while (1);
+    }
+    for (int i = 1; i <= n; ++i) num[i] = 0;
+    return;
     int a, b;
     for (int i = 1; i <= m; ++i) {
         cin >> b >> a;
         b -= a;
         b %= n;
+        b = (b + n) % n;
         num[(n - b) % n] ++;
     }
     using ll = long long;
@@ -25,10 +30,13 @@ void sol() {
         tmp -= 1ll * (n - 1) * num[n - i];
         ans = min(ans, tmp);
     }
-    cout << ans << endl;
+    cout << ans << '\n';
 }
 
 int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
     int t;
     cin >> t;
     while (t --) {

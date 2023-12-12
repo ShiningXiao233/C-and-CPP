@@ -1,0 +1,5 @@
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/lib/libMathFunctions.a
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/lib/libSqrtLibrary.a
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/include/MathFunctions.h
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/bin/Tutorial
+/home/aurora/ganhuo/C-and-CPP/project/CMakeLearn/build/include/TutorialConfig.h

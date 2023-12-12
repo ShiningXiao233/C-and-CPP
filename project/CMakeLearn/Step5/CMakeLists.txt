@@ -40,6 +40,10 @@ target_include_directories(Tutorial PUBLIC
 # TODO 4: Install TutorialConfig.h to the include directory
 # Hint: Use the FILES and DESTINATION parameters
 
+install(TARGETS Tutorial DESTINATION bin)
+
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"  DESTINATION include  )
+
 # TODO 5: Enable testing
 
 # TODO 6: Add a test called Runs which runs the following command:
